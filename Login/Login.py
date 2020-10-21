@@ -1,8 +1,11 @@
-from tkinter import*
-from PIL import Image,ImageTk
 import time
+from tkinter import *
 from tkinter import messagebox
+
 import pymysql
+from PIL import Image, ImageTk
+
+
 class Slider:
 	def __init__(self,root):
 		self.root=root;
@@ -113,65 +116,6 @@ class Slider:
 
 
 
-	 
-       
-		 
-	 
 root=Tk()
 obj=Slider(root)
 root.mainloop()
-
-# l=Label(root,font="bold").pack()
-# x=l
-# def move():
-# 	global x
-# 	if x==3:
-# 		x=1
-# 	elif x==1:
-# 		l.config(image=my_img1)
-# 	elif x==2:
-# 		l.config(image=my_img2) 
-# 	elif x==3:
-# 		l.config(image=my_img3)
-
-# 	x+=1
-# 	root.after(2000,move)
-
-
-
-
-
-
-
-   		
-# root.move()
-# #exit button
-# # btn=Button(root,text="exit",command=root.quit)
-# # btn.pack()
-# my_img1=ImageTk.PhotoImage(Image.open("img/v1.jpg"))
-# my_img2=ImageTk.PhotoImage(Image.open("img/v2.jpg"))
-# my_img3=ImageTk.PhotoImage(Image.open("img/v3.jpg"))
-# # my_img4=ImageTk.PhotoImage(Image.open("img/v4.jpg"))
-
-# image_list=[my_img1,my_img2,my_img3]
-
-# my_lable=Label(image=my_img1)
-# my_lable.grid(row=0,column=0,columnspan=3)
-
-
-# btn_back=Button(root,text="<<")
-# btn_exit=Button(root,text="Exit",command=root.quit)
-# btn_forword=Button(root,text=">>")
-
-
-# btn_back.grid(row=1,column=0)
-# btn_exit.grid(row=1,column=1)
-# btn_forword.grid(row=1,column=2)
-
-
-
-
-
-
-
-# root.mainloop()

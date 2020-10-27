@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from random import randint
 import time
+import webbrowser
 from PIL import Image,ImageTk
 
 
@@ -12,6 +13,11 @@ p2 = []  # what player rwo selected
 Count = 0
 ScoreX = 0
 ScoreO = 0
+new = 1
+url = "http://127.0.0.1:5500/about.html"
+def openweb():
+    webbrowser.open(url, new=new)
+
 
 
 
@@ -39,8 +45,8 @@ second = StringVar()
 
 # setting the default value as 0
 hour.set(" 00")
-minute.set(" 01")
-second.set(" 00")
+minute.set(" 0")
+second.set(" 10")
 #
 # # Use of Entry class to take input from the user
 frame=Frame(root, bg="#6dd5ed")
@@ -96,6 +102,8 @@ def submit():
         if (temp == 0):
             messagebox.showinfo("Time Countdown", "Time's up ")
             root.destroy()
+            openweb()
+
 
         # after every one sec the value of temp will be decremented
         # by one
@@ -174,6 +182,7 @@ b10.config(command=lambda: Restart())
 b11 = Button(root, font="Times 15 bold", text='END', bg='cadet blue', fg='white', height=2, width=8)
 b11.grid(row=4, column=2, padx=5, pady=4, sticky='snew')
 b11.config(command=lambda: game_terminate())
+b11.config(command=lambda:openweb())
 
 
 def game_terminate():

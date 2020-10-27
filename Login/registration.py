@@ -28,7 +28,7 @@ class Register:
 		
 		#------first------------
 		#Name 
-		Name=Label(frame,text="Player Name", font=("times new roman",15,"bold"),bg="white",fg="#A9CB9F").place(x=50,y=120)
+		Name=Label(frame,text="User Name", font=("times new roman",15,"bold"),bg="white",fg="#A9CB9F").place(x=50,y=120)
 		self.P_name=Entry(frame,font=("times new roman",15),bg="#E0E3EA",fg="#9370D8")
 		self.P_name.place(x=50,y=150,width=250)
         #registration number
@@ -72,7 +72,7 @@ class Register:
 		 #------fourth-----------
 		# pasword
 		passwd=Label(frame,text="Password", font=("times new roman",15,"bold"),bg="white",fg="#A9CB9F").place(x=50,y=300)
-		self.pass_e=Entry(frame,font=("times new roman",15),bg="#E0E3EA",fg="#9370D8")
+		self.pass_e=Entry(frame,show="*",font=("times new roman",15),bg="#E0E3EA",fg="#9370D8")
 		self.pass_e.place(x=50,y=330,width=250)
         #confire password
 		con_pass=Label(frame,text="Confirm Password", font=("times new roman",15,"bold"),bg="white",fg="#A9CB9F").place(x=350,y=300)
